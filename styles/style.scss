@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import './_variables';
+@import './header/_header';
+
+
+.contact {
+    @include flexCenter(row);
+    @extend header;
+    background: coral;
+
+    button {
+        background: $primaryBtn;
+    }
+}
